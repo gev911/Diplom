@@ -1,0 +1,52 @@
+﻿<Window x:Class="Diplom_new.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="604" Width="559">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Հաճախությունների տիրույթի տրոհում&#xD;&#xA;                   ենթատիրույթների" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.342,-0.846" Height="60" Width="486" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ScrollViewer.CanContentScroll="True" UseLayoutRounding="False"/>
+        <Label Content="Տրոհման եղանակը" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cb_variant" HorizontalAlignment="Left" Margin="382,98,0,0" VerticalAlignment="Top" Width="159" SelectedIndex="0">
+            <ComboBoxItem Content="I Եղանակ" HorizontalAlignment="Left" Width="181"/>
+            <ComboBoxItem Content="II Եղանակ" HorizontalAlignment="Left" Width="181"/>
+            <ComboBoxItem Content="III Եղանակ" HorizontalAlignment="Left" Width="181"/>
+        </ComboBox>
+        <Label Content="Ազդանշանի առավելագույն հաճախությունը" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ազդանշանի նվազագույն հաճախությունը" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ծածկման պաշարի գործակիցը" HorizontalAlignment="Left" Margin="10,187,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ենթատիրույթի գործակիցը" HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top"/>
+        <Label Content="Առաջին եղանակով&#xD;&#xA;ենթատիրույթների քանակը" HorizontalAlignment="Left" Margin="10,246,0,0" VerticalAlignment="Top"/>
+        <Label Content="fmax" HorizontalAlignment="Left" Margin="280,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="fmin" HorizontalAlignment="Left" Margin="280,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.618,0.5"/>
+        <Label Content="A" HorizontalAlignment="Left" Margin="280,187,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Kետ" HorizontalAlignment="Left" Margin="280,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="280,254,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.353,1.308"/>
+        <TextBox x:Name="tb_fmax" HorizontalAlignment="Left" Height="23" Margin="382,129,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="159"/>
+        <TextBox x:Name="tb_fmin" HorizontalAlignment="Left" Height="23" Margin="382,160,0,0" TextWrapping="Wrap" Text="1.5" VerticalAlignment="Top" Width="159"/>
+        <TextBox x:Name="tb_A" HorizontalAlignment="Left" Height="23" Margin="382,190,0,0" TextWrapping="Wrap" Text="1.03" VerticalAlignment="Top" Width="159"/>
+        <TextBox x:Name="tb_Ket" HorizontalAlignment="Left" Height="23" Margin="382,222,0,0" TextWrapping="Wrap" Text="1.5" VerticalAlignment="Top" Width="159"/>
+        <TextBox x:Name="tb_B" HorizontalAlignment="Left" Height="23" Margin="382,258,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="159"/>
+        <ComboBox x:Name="cb_fmax" HorizontalAlignment="Left" Margin="321,130,0,0" VerticalAlignment="Top" Width="56" SelectedIndex="0">
+            <ComboBoxItem Content="ՄՀց" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="ԿՀց" HorizontalAlignment="Left" Width="92" Selected="ComboBoxItem_Selected"/>
+        </ComboBox>
+        <ComboBox x:Name="cb_fmin" HorizontalAlignment="Left" Margin="321,160,0,0" VerticalAlignment="Top" Width="56" SelectedIndex="0">
+            <ComboBoxItem Content="ՄՀց" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="ԿՀց" HorizontalAlignment="Left" Width="92" Selected="ComboBoxItem_Selected"/>
+        </ComboBox>
+        <Button Content="Բլոկ սխեմա" HorizontalAlignment="Left" Margin="10,308,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Բանաձև" HorizontalAlignment="Left" Margin="115,308,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Սխեմա" HorizontalAlignment="Left" Margin="220,308,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Որոշել" HorizontalAlignment="Left" Margin="441,308,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+        <DataGrid x:Name="dg_results" ItemsSource="{Binding ResultRowBinding}" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Height="230" Width="531">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=i}" Header="i"/>
+                <DataGridTextColumn Binding="{Binding Path=f_min_i}" Header="f min i"/>
+                <DataGridTextColumn Binding="{Binding Path=f_max_i}" Header="f max i"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

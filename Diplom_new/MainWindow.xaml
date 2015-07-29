@@ -1,0 +1,20 @@
+﻿<Window x:Class="Diplom_new.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom_new"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="483" Width="528">
+    <Grid>
+        <Button Content="Հաճախությունների տիրույթի տրոհումը ենթատիրույթների" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="500" Height="50" Click="Button1_Click"/>
+        <Button Content="Միջանկյալ հաճախության որոշումը" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="500 " Height="50" Click="Button2_Click"/>
+        <Button Content="Ընդունիչի թողարկման և աղմկային շերտերի որոշումը " HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="500                 " Height="50" Click="Button3_Click"/>
+        <Button Content="Ընդունիչի աղմուկի գործակցի և զգայունության որոշումը" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Width="500                 " Height="50" Click="Button4_Click"/>
+        <Button Content="Ընդունիչի ուժեղացման գործակցի և ՄՀՈւ-ի աստիճանների թվի որոշումը" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" Width="500                 " Height="50" Click="Button5_Click"/>
+        <Button Content="ՄՀՈւ-ի կայուն ուժեղացման գործակցի որոշումը" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Width="500                 " Height="50" Click="Button6_Click"/>
+        <Button Content="Ընդունման կողմնակի ուղիների ընտրողականության հաշվարկը " HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top" Width="500                 " Height="50" Click="Button7_Click"/>
+        <Button Content="Ընդունիչի թույլատրելի աղմուկի գործակցի որոշումը" HorizontalAlignment="Left" Margin="10,395,0,0" VerticalAlignment="Top" Width="500                 " Height="50" Click="Button8_Click"/>
+
+    </Grid>
+</Window>
