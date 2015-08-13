@@ -33,7 +33,8 @@ namespace Diplom_new
 
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
-
+            var window2 = new Window2();
+            window2.Show();
         }
 
         private void Button3_Click(object sender, RoutedEventArgs e)
